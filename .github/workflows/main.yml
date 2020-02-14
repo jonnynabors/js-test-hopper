@@ -1,7 +1,17 @@
 name: Deploy to VSCode Extension Store
-on: [push]
+on:
+  push:
+    branches:
+      - master
+name: Deploy Extension
 jobs:
-  vsce_publish:
-    name: publish the thing
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: sigma/vsce-publish-action@v0.0.2
+      - uses: actions/checkout@v2
+      - run: yarn install
+      - uses: lannonbr/vsce-action@master
+        with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
