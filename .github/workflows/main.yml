@@ -1,2 +1,7 @@
-- name: GitHub Action for vsce
-  uses: lannonbr/vsce-action@2.0.0
+name: Deploy to VSCode Extension Store
+on: [push]
+jobs:
+  vsce_publish:
+    name: publish the thing
+    steps:
+      - uses: sigma/vsce-publish-action@v0.0.2
