@@ -40,6 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(disposable);
 }
 
+// TODO: Use a glob!
 const isThisATestFile = (fileType: string) => {
   return fileType === "spec" || fileType === "test";
 };
