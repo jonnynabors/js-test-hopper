@@ -2,7 +2,7 @@
   "name": "js-test-hopper",
   "displayName": "js-test-hopper",
   "description": "Quickly hop from your implementation to your tests and vice-versa",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.42.0"
   },
