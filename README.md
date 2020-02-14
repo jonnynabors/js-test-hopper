@@ -1,5 +1,3 @@
-# test-hopper
+# JavaScript Test Hopper
 
-![Deploy Extension](https://github.com/jonnynabors/js-test-hopper/workflows/Deploy%20Extension/badge.svg)
-
-Easily swap between your implementation and test files
+A lightweight extension for JavaScript/TypeScript projects that allow you to quickly navigate between a test file and its corresponding implementation file (and vice versa).
