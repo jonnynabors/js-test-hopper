@@ -3,7 +3,7 @@ import * as path from "path";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "extension.testHopper",
+    "extension.jsTestJumper",
     async () => {
       const filePath = vscode.window.activeTextEditor?.document.fileName;
       const [fileName, fileDelimitter, fileExtension] = path

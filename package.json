@@ -1,6 +1,6 @@
 {
-  "name": "test-hopper",
-  "displayName": "test-hopper",
+  "name": "js-test-hopper",
+  "displayName": "js-test-hopper",
   "description": "Quickly hop from your implementation to your tests and vice-versa",
   "version": "0.0.1",
   "engines": {
@@ -8,26 +8,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonnynabors/test-hopper.git"
+    "url": "https://github.com/jonnynabors/js-test-hopper.git"
   },
   "publisher": "jonnynabors",
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.testHopper"
+    "onCommand:extension.jsTestJumper"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.testHopper",
+        "command": "extension.jsTestJumper",
         "title": "Hop to test or implementation"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.testHopper",
+        "command": "extension.jsTestJumper",
         "key": "ctrl+alt+t",
         "mac": "ctrl+cmd+t"
       }
